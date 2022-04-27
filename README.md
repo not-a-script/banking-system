@@ -40,6 +40,8 @@ ensure es_extended
 
 ⚠️ Do not change the name of the resource or the visual interface (NUI) will not work.
 
+You can have support on our <a href="https://discord.gg/8ecXhFXqR4">Discord</a> (FR/ENG)
+
 ![Capture d’écran 2022-04-27 223321](https://user-images.githubusercontent.com/40030799/165626282-2604065e-e66d-4fbd-bdd3-f316ddd47549.png)
 ![Capture d’écran 2022-04-27 223344](https://user-images.githubusercontent.com/40030799/165626322-f46cef4f-05d6-4ca8-8583-96adbd92caf8.png)
 ![Capture d’écran 2022-04-27 223359](https://user-images.githubusercontent.com/40030799/165626342-fdf99314-50ae-4a44-a631-a3b2d880d9d1.png)
