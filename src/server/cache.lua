@@ -3,7 +3,7 @@
 ]]
 
 
-ESX = nil
+
 
 --[[
     Setup caching
