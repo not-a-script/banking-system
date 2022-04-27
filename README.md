@@ -7,7 +7,6 @@ This banking system was made entirely (mockup, front-end, lua) by <a href="https
 
 Compatible with :
  - ESX Legacy
- - ESX V1 (including sub versions)
 
 
 Features :
@@ -33,9 +32,9 @@ For the ESX salary system, the bank system needs es_extended however to use the 
 
 Here is an example of how start the cfg
 ```
-ensure mysql-async
-ensure banking-system
+ensure oxmysql
 ensure es_extended
+ensure banking-system
 ```
 
 ⚠️ Do not change the name of the resource or the visual interface (NUI) will not work.

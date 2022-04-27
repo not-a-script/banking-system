@@ -15,6 +15,7 @@ files {
 }
 
 
+shared_scripts {'@es_extended/imports.lua',}
 server_scripts {
     "@mysql-async/lib/MySQL.lua", -- if you're using oxmysql, just replace mysql-async by oxmysql
     "src/config.lua",
