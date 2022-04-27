@@ -1,6 +1,8 @@
 # Banking System
 A banking system that allows players to add, withdraw or transfer money from their personal and common accounts.
 
+🇫🇷 <a href="https://github.com/idev-co/banking-system/tree/esx-french">Here</a>
+
 This banking system was made entirely (mockup, front-end, lua) by <a href="https://github.com/s1nyx">Sinyx</a> for the Starling City project, since we don't use the script anymore i decided to put this script on github (with the developer's consent of course)
 
 Compatible with :
