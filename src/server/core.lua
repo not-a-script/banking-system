@@ -2,10 +2,6 @@
     Core Functions
 ]]
 
-Citizen.CreateThread(function ()
-    while not ESX do
-        Citizen.Wait(0)
-    end
     
     ESX.RegisterServerCallback('stl_bankingsystem:getMoney', function(source, callback)
         local xPlayer = ESX.GetPlayerFromId(source)
