@@ -10,6 +10,7 @@ Compatible avec :
 
 Fonctionnalités :
 - Système de comptes communs (maximum 3)
+- Transfert d'argent
 - Système de cache (pour éviter trop de requêtes sql)
 - Historique des achats
 - Système de mot de passe pour se connecter à son compte bancaire
