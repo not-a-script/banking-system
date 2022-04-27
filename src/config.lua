@@ -193,7 +193,7 @@ Config = {
             icon = "icons/briefcase.svg"
         },
         {
-            name = "S.C.M.S",
+            name = "EMS",
             icon = "icons/truck-medical-solid.svg"
         },
         {
