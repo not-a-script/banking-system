@@ -37,3 +37,8 @@ ensure es_extended
 ```
 
 ⚠️ Ne changez pas le nom de la ressource sinon l'interface visuelle (NUI) ne fonctionnera plus.
+
+![Capture d’écran 2022-04-27 212644](https://user-images.githubusercontent.com/40030799/165604699-2bd25bc5-5777-433e-9d0e-da25253db287.png)
+
+![Capture d’écran 2022-04-27 212659](https://user-images.githubusercontent.com/40030799/165604760-0440b862-98d7-4e5b-be2d-b182c15c911d.png)
+
