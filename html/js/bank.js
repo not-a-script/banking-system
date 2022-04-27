@@ -356,7 +356,7 @@ const onPlayerAddedToAccount = () => {
     .then((response) => response.json())
     .then((data) => {
       data = JSON.parse(data);
-      if (!data) return notify("Un problème a occuré lors du traitement.");
+      if (!data) return notify("A problem occurred during processing.");
 
       if (data.success) {
         i2++;
@@ -460,7 +460,7 @@ const loginIntoAccount = () => {
 
   if (password === "") {
     return notify(
-      "Le mot de passe doit contenir au ~r~minimum 1 caractère~w~."
+      "The password must contain at least 1 character~w~."
     );
   }
 
@@ -476,12 +476,12 @@ const loginIntoAccount = () => {
     .then((response) => response.json())
     .then((canConnect) => {
       if (canConnect) {
-        notify("~g~Connexion~w~ en cours..");
+        notify("~g~Connect~w~ in progress..");
 
         hideCurrentWindow();
         setActiveWindow("main-interface");
       } else {
-        notify("Le mot de passe est ~r~incorrect~w~.");
+        notify("The password is ~r~incorrect~w~.");
       }
     });
 };
@@ -492,12 +492,12 @@ const registerAccount = () => {
   const password = $("#new-password").val();
 
   if (password !== $("#confirm-password").val()) {
-    return notify("Le mot de passe ~r~n'est pas le même~w~ que l'autre.");
+    return notify("The password must contain at least 1 character~w~");
   }
 
   if (password === "") {
     return notify(
-      "Le mot de passe doit contenir au ~r~minimum 1 caractère~w~."
+      "The password must contain at least 1 character~w~."
     );
   }
 
@@ -517,7 +517,7 @@ const registerAccount = () => {
 
       if (!updatedPlayerData) {
         return notify(
-          "Un ~r~problème est survenu ~w~lors de la création du compte."
+          "A ~r~problem occurred ~w~while creating the account."
         );
       }
 
@@ -526,7 +526,7 @@ const registerAccount = () => {
       hideCurrentWindow();
       setActiveWindow("main-interface");
 
-      return notify("Compte créé avec ~g~succès ~w~!");
+      return notify("Account created with ~g~success ~w~!");
     });
 };
 
@@ -595,11 +595,11 @@ const onCreateCommonAccount = () => {
     .then((response) => response.json())
     .then((data) => {
       data = JSON.parse(data);
-      if (!data) return notify("Un problème a occuré lors du traitement.");
+      if (!data) return notify("A problem occurred during processing.");
 
       if (data.memberAlreadyTaken) {
         return notify(
-          "Un membre que vous avez choisis possède ~r~déjà 3 comptes~w~ communs."
+          "A member you have chosen already has 3 common accounts~w~."
         );
       }
 
@@ -648,7 +648,7 @@ const loadMainInterface = () => {
   $("#nav-common").removeClass("active");
   $("#navbar").css("display", "block");
 
-  notify("~g~Connecté~w~ !");
+  notify("~g~Connected~w~ !");
 };
 
 availableWindows.set("main-interface", loadMainInterface);
@@ -799,7 +799,7 @@ availableWindows.set("main-common-remove-money", removePersonalMoney);
 
 const onRemoveMoney = () => {
   if (!conform($("#modal-remove-input").val())) {
-    return notify("Le montant doit contenir ~r~que des chiffres~w~.");
+    return notify("The amount must contain ~r~only numbers~w~.");
   }
 
   const isPersonalAccount = $("#main-interface").css("display") === "block";
@@ -825,7 +825,7 @@ const onRemoveMoney = () => {
     .then((data) => {
       playerData = JSON.parse(data);
       if (!playerData)
-        return notify("Un problème a occuré lors du traitement.");
+        return notify("A problem occurred during processing.");
 
       if (isPersonalAccount) {
         $("#main-balance").text(
@@ -896,7 +896,7 @@ availableWindows.set("main-common-add-money", addMoney);
 
 const onAddMoney = () => {
   if (!conform($("#modal-add-input").val())) {
-    return notify("Le montant doit contenir ~r~que des chiffres~w~.");
+    return notify("The amount must contain ~r~only numbers~w~.");
   }
 
   const personalAccount = $("#main-interface").css("display") === "block";
@@ -922,7 +922,7 @@ const onAddMoney = () => {
     .then((data) => {
       playerData = JSON.parse(data);
       if (!playerData)
-        return notify("Un problème a occuré lors du traitement.");
+        return notify("A problem occurred during processing.");
 
       if (personalAccount) {
         const amount = parseFloat($("#modal-add-input").val());
@@ -1006,7 +1006,7 @@ availableWindows.set("main-common-transfer-money", () => transferMoney(true));
 
 const onTransferMoney = () => {
   if (!conform($("#modal-transfer-input").val())) {
-    return notify("Le montant doit contenir ~r~que des chiffres~w~.");
+    return notify("The amount must contain ~r~only numbers~w~.");
   }
 
   const personalAccount = $("#main-interface").css("display") === "block";
@@ -1033,7 +1033,7 @@ const onTransferMoney = () => {
     data.json().then((data) => {
       playerData = JSON.parse(data);
       if (!playerData)
-        return notify("Un problème a occuré lors du traitement.");
+        return notify("A problem occurred during processing.");
 
       if (personalAccount) {
         $("#main-balance").text(

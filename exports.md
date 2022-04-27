@@ -1,67 +1,68 @@
-:warning: Je vais utiliser xPlayer.getIdentifier(), mais vous n'êtes pas obligé du moment ou vous avez l'identifier du joueur c'est bon
+:warning: I'll use xPlayer.getIdentifier(), but you don't have to, as long as you have the player's identifier it's fine
  
 
-Retirer de l'argent 
+Remove money
   ```lua
  exports["stl_bankingsystem"]:RemoveMoney(xPlayer.getIdentifier(), 50000, 1, function(success)
     if success then
-        print("Il a bien + ou = à 50 000$ sur son compe perso donc il retire")
+        print("He has + or = $50,000 on his personal account so we remove the money")
     else
-        print("Il a pas assez d'argent donc il retire pas")
+        print("He doesn't have enough money so we doesn't remove the money")
     end
 end, false)
--- 50000 correspond au montant à retirer
--- 1 correspond à l'id de l'achat (j'explique ça plus bas)
--- le false après le end précise que vous ne voulez pas retirer l'argent de force
+-- 50000 is the amount to be removed
+-- 1 corresponds to the id of the purchase (I explain this in the readme)
+-- the false after the end specifies that you do not want to remove the money by force
 ```
 
-Retirer de l'argent (de force, donc même si il a moins que le montant demander on retire)
+Remove money (by force, so even if he has less than the amount requested we remove)
 ```lua
 exports["stl_bankingsystem"]:RemoveMoney(xPlayer.getIdentifier(), 50000, 1, function(success)
     if success then
-        print("Même si il a moins de 50 000$ on retire")
+        print("Even if he has less than 50 000$ we remove the money")
     else
-        print("Son compte a pas été trouvé")
+        print("His account has not been found")
     end
 end, true)
--- 50000 correspond au montant à retirer
--- 1 correspond à l'id de l'achat (j'explique ça plus bas)
--- le true après le end précise que vous voulez retirer l'argent de force
+-- 50000 is the amount to be removed
+-- 1 corresponds to the id of the purchase (I explain this in the readme)
+-- the true after the end specifies that you want to remove the money by force
 ```
 
-Ajouter de l'argent 
+Add money 
 ```lua
  exports["stl_bankingsystem"]:AddMoney(xPlayer.getIdentifier(), 50000, 1, function(success)
     if success then
-        print("Il a bien + ou = à 50 000$ sur lui donc il ajoute")
+        print("He has + or = $50,000 on him so we add the money")
     else
-        print("Il a pas assez de money donc il ajoute pas")
+        print("He doesn't have enough money so we doesn't add the money")
     end
 end, false)
--- 50000 correspond au montant à retirer
--- 1 correspond à l'id de l'achat (j'explique ça plus bas)
--- le false après le end précise que vous ne voulez pas ajouter l'argent de force
+-- 50000 is the amount to be removed
+-- 1 corresponds to the id of the purchase (I explain this in the readme)
+-- the false after the end specifies that you do not want to add the money by force
 ```
 
-Ajouter de l'argent (de force)
+Add money (by force)
 ```lua
 exports["stl_bankingsystem"]:AddMoney(xPlayer.getIdentifier(), 50000, 1, function(success)
     if success then
-        print("Même si il a moins de 50 000$ sur lui on dépose")
+        print("Even if he has less than 50 000$ on his bank account we add the money")
     else
-        print("Son compte a pas été trouvé")
+        print("His account has not been found")
     end
 end, true)
--- 50000 correspond au montant à retirer
--- 1 correspond à l'id de l'achat (j'explique ça plus bas)
--- le true après le end précise que vous voulez ajouter l'argent de force
+-- 50000 is the amount to be removed
+-- 1 corresponds to the id of the purchase (I explain this in the readme)
+-- the true after the end specifies that you want to add the money by force
 ```
 
-Voir l'argent sur le compte d'un joueur
+See the money in a player's account
 ```lua
 local accountBank = exports['stl_bankingsystem']:GetBankMoney(xPlayer.getIdentifier())
-print(accountBank) -- va vous retourner l'argent dans son compte bancaire
+print(accountBank) -- will return the money in his bank account
 ```
-Rafraichir les données d'un joueur (donc le retirer du cache et forcé le script à faire une requête sql)
+Refresh a player's data (i.e. remove it from the cache and force the script to make an sql query)
 ```lua
 RemoveFromCache(xPlayer.getIdentifier())
+```

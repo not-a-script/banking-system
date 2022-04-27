@@ -109,7 +109,7 @@ Citizen.CreateThread(function ()
             DisableControlAction(0, 106, true) -- VehicleMouseControlOverride
         elseif shouldDrawInput then
             SetTextComponentFormat("STRING")
-            AddTextComponentString("Appuyez sur ~INPUT_CONTEXT~ pour ouvrir le menu.")
+            AddTextComponentString("Press ~INPUT_CONTEXT~ to open the menu.")
             DisplayHelpTextFromStringLabel(0, 0, 1, -1)
 
             if IsControlJustReleased(1, Config.controlOpenMenu) then

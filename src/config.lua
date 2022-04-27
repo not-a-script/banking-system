@@ -3,34 +3,33 @@
 --]]
 
 Config = {
-    -- Affiche les différentes données où des problèmes pourraient occurés (réservé aux développeurs)
+    -- Displays the different data where problems could occur (for developers only)
     debugMode = false,
 
-    -- ID du control pour ouvrir le menu | 51 = E
+    -- ID of the control to open the menu | 51 = E
     controlOpenMenu = 51,
 
 
-    
-    -- distance à laquelle le joueur doit être pour ouvrir le menu par rapport aux coordonnées
+    -- distance the player must be to open the menu from the coordinates
     useDistance = 1.5,
     --[[ 
-        Transactions effectués entre le jour actuelle où le joueur ouvre le menu et le jour actuelle moins lastTransactionDays
+        Transactions made between the current day the player opens the menu and the current day minus lastTransactionDays
         IMPORTANT: Maximum: 30
-        (Exemple: par défaut il est définit à 4 donc seul les transactions effectués il y a maximum 4 jour par rapport à aujourd'hui seront affichés)
+        (Example: by default it is set to 4 so only transactions made up to 4 days ago will be displayed)
     --]] 
     lastTransactionDays = 15,
     --[[ 
-        Nombre max de transactions afficher dans les historiques de transactions
-        ATTENTION: Cela impact également le calcule des gains + dépense (plus le nombre est bas, moins il pourra récupérer d'historique de transactions, ne pas le mettre trop haut pour éviter de surcharger le cache et la base de donnée)
+        Max number of transactions displayed in the transaction history
+        WARNING: This also impacts the calculation of earnings + expenses (the lower the number, the less transaction history it will be able to retrieve, do not set it too high to avoid overloading the cache and the database)
     --]] 
     transactionsLimitHistory = 200,
-    -- points des ATM / Banques
+    -- ATM / Bank points
 
-    -- Argent de départ sur le compte en banque personnel (lors de sa création)
+    -- Starting money on the personal bank account (when it is created)
     startPersonalAccountMoney = 10000,
 
     --[[
-        Permet d'afficher les blips des banques sur la map
+        Allows to display the blips of the banks on the map
     ]]
     showBlips = true,
     
@@ -164,12 +163,12 @@ Config = {
         vector3(1175.0643310547, 2706.6435546875, 38.094036102295)
     },
     --[[ 
-        Les différents types de service affichés dans l'historique de transactions
+        The different types of services displayed in the transaction history
         
-        ATTENTION: NE PAS CHANGER L'ORDRE, CHAQUE EMPLACEMENT CREE UN ID
-        LAISSER LES PREMIERS COMME ILS SONT (VOUS POUVEZ SEULEMENT CHANGER LE NOM + ICON)
+        ATTENTION: DO NOT CHANGE THE ORDER, EACH LOCATION CREATES AN ID
+        LEAVE THE FIRST ONES AS THEY ARE (YOU CAN ONLY CHANGE THE NAME + ICON)
 
-        LES ICONES DOIVENT ETRE DE LA MEME COULEUR POUR UN MEILLEUR RENDUE
+        THE ICONS MUST BE OF THE SAME COLOR FOR A BETTER RENDERING
     --]]
     servicesType = {
         {
@@ -177,19 +176,19 @@ Config = {
             icon = "icons/atm.svg"
         },
         {
-            name = "Transfert",
+            name = "Transfer",
             icon = "icons/atm.svg"
         },
         {
-            name = "Société",
+            name = "Society",
             icon = "icons/briefcase.svg"
         },
         {
-            name = "Concessionnaire",
+            name = "Car Dealer",
             icon = "icons/car.svg"
         },
         {
-            name = "Agence immobiliaire",
+            name = "Real Estate Agency",
             icon = "icons/briefcase.svg"
         },
         {
@@ -197,15 +196,15 @@ Config = {
             icon = "icons/truck-medical-solid.svg"
         },
         {
-            name = "Auto-école",
+            name = "Driving school",
             icon = "icons/driving-school.svg"
         },
         {
-            name = "Station Essence",
+            name = "Gas Station",
             icon = "icons/gas-pump.svg"
         },
         {
-            name = "Gouvernement",
+            name = "Government",
             icon = "icons/birefcase.svg"
         },
     }

@@ -16,23 +16,23 @@
                     <hr>
                     <div class="items-transfer" id="modal-transfer">
                         <div class="content">
-                            <label for="">Montant à transférer <input type="text" placeholder="5000" id="modal-transfer-input"></label>
-                            <label for="">Destinataire <select name="online-players" id="modal-transfer-select">
+                            <label for="">Amount to transfer <input type="text" placeholder="5000" id="modal-transfer-input"></label>
+                            <label for="">Recipient <select name="online-players" id="modal-transfer-select">
                             </select></label>
                         </div>
-                        <a type="submit" class="modal-button" id="modal-transfer-valid">Valider</a>
+                        <a type="submit" class="modal-button" id="modal-transfer-valid">Confirm</a>
                     </div>
                     <div class="items-add" id="modal-add">
                         <div class="content">
-                            <label for="">Montant à ajouter au compte <input type="text" placeholder="5000" id="modal-add-input"></label>
+                            <label for="">Amount to deposit to the account <input type="text" placeholder="5000" id="modal-add-input"></label>
                         </div>
-                        <a type="submit" class="modal-button" id="modal-add-valid">Valider</a>
+                        <a type="submit" class="modal-button" id="modal-add-valid">Confirm</a>
                     </div>
                     <div class="items-remove" id="modal-remove">
                         <div class="content">
-                            <label for="">Montant à retirer du compte <input type="text" placeholder="5000" id="modal-remove-input"></label>
+                            <label for="">Amount to be withdrawn from the account <input type="text" placeholder="5000" id="modal-remove-input"></label>
                         </div>
-                        <a type="submit" class="modal-button" id="modal-remove-valid">Valider</a>
+                        <a type="submit" class="modal-button" id="modal-remove-valid">Confirm</a>
                     </div>
                 </div>
             </div>
@@ -64,15 +64,15 @@
                     <div class="smaller-container">
                         <div class="container">
                             <div class="info-block">
-                                <p>Solde :</p>
+                                <p>Balance :</p>
                                 <p><strong id="common-solde"></strong></p>
                             </div>
                             <div class="info-block">
-                                <p>Retrait ce mois-ci :</p>
+                                <p>Withdrawal this month :</p>
                                 <p><strong class="red" id="common-spent-money"></strong></p>
                             </div>
                             <div class="info-block">
-                                <p>Gain ce-mois-ci :</p>
+                                <p>Gain this month :</p>
                                 <p><strong class="green" id="common-earn-money"></strong></p>
                             </div>
                         </div>
@@ -82,15 +82,15 @@
                                 
                             </select>
                             
-                            <a class="green-button" id="common-add-player">Ajouter</a>
-                            <a class="red-button" id="delete-common-account">Supprimer le compte</a>
+                            <a class="green-button" id="common-add-player">Add</a>
+                            <a class="red-button" id="delete-common-account">Delete the account</a>
                         </div>
 
                         <div class="container buttons-container" id="buttons-container">
-                            <a class="remove" id="main-common-remove-money">Retirer</a>
-                            <a class="add" id="main-common-add-money">Déposer</a>
+                            <a class="remove" id="main-common-remove-money">Remove</a>
+                            <a class="add" id="main-common-add-money">Deposit</a>
                             <div class="transfer-block">
-                                <a class="transfer" id="main-common-transfer-money">Transférer</a>
+                                <a class="transfer" id="main-common-transfer-money">Transfer</a>
 
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                 </div>
                
                 <div class="right-part">
-                    <h1>Historique du compte commun</h1>
+                    <h1>History of the common account</h1>
                     <nav>
                         <ul id="history-common">
                             
@@ -124,15 +124,15 @@
 
                     <div class="container">
                         <div class="info-block">
-                            <p>Solde :</p>
+                            <p>Balance :</p>
                             <p><strong id="main-balance"></strong></p>
                         </div>
                         <div class="info-block">
-                            <p>Dépense ce mois-ci :</p>
+                            <p>Spent this month :</p>
                             <p><strong id="main-spent-month" class="red"></strong></p>
                         </div>
                         <div class="info-block">
-                            <p>Dépense cette semaine :</p>
+                            <p>Spend this week :</p>
                             <p><strong id="main-spent-week" class="red"></strong></p>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                                 <path d="M5.32812 14.3496H25.6719C25.8333 14.3496 25.9141 14.4303 25.9141 14.5918V16.4082C25.9141 16.5697 25.8333 16.6504 25.6719 16.6504H5.32812C5.16667 16.6504 5.08594 16.5697 5.08594 16.4082V14.5918C5.08594 14.4303 5.16667 14.3496 5.32812 14.3496Z" fill="#66CE7D"/>
                             </svg>
                                 
-                            <p>Gain aujourd'hui :</p>
+                            <p>Gain today :</p>
                             <p><strong id="main-earning-today"></strong></p>
                         </div>
                         <div class="remove-stats-block">
@@ -158,17 +158,17 @@
                     </div>
 
                     <div class="container buttons-container">
-                        <a class="remove" id="main-remove-money">Retirer</a>
-                        <a class="add" id="main-add-money">Déposer</a>
+                        <a class="remove" id="main-remove-money">Remove</a>
+                        <a class="add" id="main-add-money">Deposit</a>
                         <div class="transfer-block">
-                            <a class="transfer" id="main-transfer-money">Transférer</a>
+                            <a class="transfer" id="main-transfer-money">Transfer</a>
 
                         </div>
                     </div>
                 </div>
                
                 <div class="right-part">
-                    <h1>Historique des transactions</h1>
+                    <h1>Transaction History</h1>
                     <nav>
                         <ul id="history">
                           
@@ -203,9 +203,9 @@
                             </svg>
                             
                             <p>
-                                Restez connecté ! Suivez en
-                                temps réel vos comptes et 
-                                devenez le plus riche de la ville.
+                                Stay connected! Keep track of your
+                                your accounts in real time and 
+                                become the richest person in town.
                             </p>
                         </div>
                     </div>
@@ -218,14 +218,14 @@
                                 <path d="M18.5 0C20.9533 0 23.306 0.97455 25.0407 2.70926C26.7754 4.44397 27.75 6.79675 27.75 9.25C27.75 11.7033 26.7754 14.056 25.0407 15.7907C23.306 17.5254 20.9533 18.5 18.5 18.5C16.0467 18.5 13.694 17.5254 11.9593 15.7907C10.2246 14.056 9.25 11.7033 9.25 9.25C9.25 6.79675 10.2246 4.44397 11.9593 2.70926C13.694 0.97455 16.0467 0 18.5 0ZM18.5 4.39375C17.212 4.39375 15.9768 4.90539 15.0661 5.81611C14.1554 6.72684 13.6437 7.96204 13.6437 9.25C13.6437 10.538 14.1554 11.7732 15.0661 12.6839C15.9768 13.5946 17.212 14.1063 18.5 14.1063C19.788 14.1063 21.0232 13.5946 21.9339 12.6839C22.8446 11.7732 23.3563 10.538 23.3563 9.25C23.3563 7.96204 22.8446 6.72684 21.9339 5.81611C21.0232 4.90539 19.788 4.39375 18.5 4.39375ZM18.5 20.8125C24.6744 20.8125 37 23.8881 37 30.0625V37H0V30.0625C0 23.8881 12.3256 20.8125 18.5 20.8125ZM18.5 25.2062C11.5625 25.2062 4.39375 28.5825 4.39375 30.0625V32.6063H32.6063V30.0625C32.6063 28.5825 25.3681 25.2062 18.5 25.2062Z" fill="#B8B8B8"/>
                             </svg>
                         </div>
-                        <p>Mon compte</p>
+                        <p>My account</p>
                     </a>
                     <div class="common-accounts">
                         <div class="center" id="center-common-accounts">
                             
                         </div>
                         
-                        <p>Comptes communs</p>
+                        <p>Common accounts</p>
                     </div>
                 </div>
 
@@ -234,14 +234,14 @@
                         <path class="profile-icon" d="M18.5 0C20.9533 0 23.306 0.97455 25.0407 2.70926C26.7754 4.44397 27.75 6.79675 27.75 9.25C27.75 11.7033 26.7754 14.056 25.0407 15.7907C23.306 17.5254 20.9533 18.5 18.5 18.5C16.0467 18.5 13.694 17.5254 11.9593 15.7907C10.2246 14.056 9.25 11.7033 9.25 9.25C9.25 6.79675 10.2246 4.44397 11.9593 2.70926C13.694 0.97455 16.0467 0 18.5 0ZM18.5 4.39375C17.212 4.39375 15.9768 4.90539 15.0661 5.81611C14.1554 6.72684 13.6437 7.96204 13.6437 9.25C13.6437 10.538 14.1554 11.7732 15.0661 12.6839C15.9768 13.5946 17.212 14.1063 18.5 14.1063C19.788 14.1063 21.0232 13.5946 21.9339 12.6839C22.8446 11.7732 23.3563 10.538 23.3563 9.25C23.3563 7.96204 22.8446 6.72684 21.9339 5.81611C21.0232 4.90539 19.788 4.39375 18.5 4.39375ZM18.5 20.8125C24.6744 20.8125 37 23.8881 37 30.0625V37H0V30.0625C0 23.8881 12.3256 20.8125 18.5 20.8125ZM18.5 25.2062C11.5625 25.2062 4.39375 28.5825 4.39375 30.0625V32.6063H32.6063V30.0625C32.6063 28.5825 25.3681 25.2062 18.5 25.2062Z" fill="#B8B8B8"/>
                     </svg>
                         
-                    <h1>Mon compte</h1>
+                    <h1>My account</h1>
 
                     <div class="input">
-                        <p>Mot de passe</p>
+                        <p>Password</p>
                         <input type="password" id="input-password">
                     </div>
 
-                    <a class="button" id="login-button">Connexion</a>
+                    <a class="button" id="login-button">Login</a>
                 </div>
 
                 <div class="account-register" id="account-register" data-shouldbehide="true">
@@ -249,17 +249,17 @@
                         <path class="profile-icon" d="M18.5 0C20.9533 0 23.306 0.97455 25.0407 2.70926C26.7754 4.44397 27.75 6.79675 27.75 9.25C27.75 11.7033 26.7754 14.056 25.0407 15.7907C23.306 17.5254 20.9533 18.5 18.5 18.5C16.0467 18.5 13.694 17.5254 11.9593 15.7907C10.2246 14.056 9.25 11.7033 9.25 9.25C9.25 6.79675 10.2246 4.44397 11.9593 2.70926C13.694 0.97455 16.0467 0 18.5 0ZM18.5 4.39375C17.212 4.39375 15.9768 4.90539 15.0661 5.81611C14.1554 6.72684 13.6437 7.96204 13.6437 9.25C13.6437 10.538 14.1554 11.7732 15.0661 12.6839C15.9768 13.5946 17.212 14.1063 18.5 14.1063C19.788 14.1063 21.0232 13.5946 21.9339 12.6839C22.8446 11.7732 23.3563 10.538 23.3563 9.25C23.3563 7.96204 22.8446 6.72684 21.9339 5.81611C21.0232 4.90539 19.788 4.39375 18.5 4.39375ZM18.5 20.8125C24.6744 20.8125 37 23.8881 37 30.0625V37H0V30.0625C0 23.8881 12.3256 20.8125 18.5 20.8125ZM18.5 25.2062C11.5625 25.2062 4.39375 28.5825 4.39375 30.0625V32.6063H32.6063V30.0625C32.6063 28.5825 25.3681 25.2062 18.5 25.2062Z" fill="#B8B8B8"/>
                     </svg>
                         
-                    <h1>Inscription</h1>
+                    <h1>Sign up</h1>
 
                     <div class="input">
-                        <p>Mot de passe</p>
+                        <p>Register</p>
                         <input type="password" id="new-password">
 
-                        <p>Confirmation du mot de passe</p>
+                        <p>Password confirmation</p>
                         <input type="password" id="confirm-password">
                     </div>
 
-                    <a class="button" id="register-button">S'inscrire</a>
+                    <a class="button" id="register-button">Sign up now</a>
                 </div>
 
                 <div class="account-create-common" id="account-common-register" data-shouldbehide="true">
@@ -267,16 +267,16 @@
                         <path class="profile-icon" d="M18.5 0C20.9533 0 23.306 0.97455 25.0407 2.70926C26.7754 4.44397 27.75 6.79675 27.75 9.25C27.75 11.7033 26.7754 14.056 25.0407 15.7907C23.306 17.5254 20.9533 18.5 18.5 18.5C16.0467 18.5 13.694 17.5254 11.9593 15.7907C10.2246 14.056 9.25 11.7033 9.25 9.25C9.25 6.79675 10.2246 4.44397 11.9593 2.70926C13.694 0.97455 16.0467 0 18.5 0ZM18.5 4.39375C17.212 4.39375 15.9768 4.90539 15.0661 5.81611C14.1554 6.72684 13.6437 7.96204 13.6437 9.25C13.6437 10.538 14.1554 11.7732 15.0661 12.6839C15.9768 13.5946 17.212 14.1063 18.5 14.1063C19.788 14.1063 21.0232 13.5946 21.9339 12.6839C22.8446 11.7732 23.3563 10.538 23.3563 9.25C23.3563 7.96204 22.8446 6.72684 21.9339 5.81611C21.0232 4.90539 19.788 4.39375 18.5 4.39375ZM18.5 20.8125C24.6744 20.8125 37 23.8881 37 30.0625V37H0V30.0625C0 23.8881 12.3256 20.8125 18.5 20.8125ZM18.5 25.2062C11.5625 25.2062 4.39375 28.5825 4.39375 30.0625V32.6063H32.6063V30.0625C32.6063 28.5825 25.3681 25.2062 18.5 25.2062Z" fill="#B8B8B8"/>
                     </svg>
                         
-                    <h1>Compte commun</h1>
+                    <h1>Common account</h1>
                     
                     <div class="input">
-                        <p>Choix des utilisateurs</p>
+                        <p>Choice of users</p>
                         <select name="players" size="7" id="create-common-players" multiple>
 
                         </select>
                     </div>
 
-                    <a class="button" id="create-common-button">Créer</a>
+                    <a class="button" id="create-common-button">Create</a>
                 </div>
             </div>
         </div>
