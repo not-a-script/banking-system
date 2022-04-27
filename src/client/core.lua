@@ -3,13 +3,7 @@
 ]]
 
 
-ESX = nil
 
-Citizen.CreateThread(function()
-    while not ESX do
-        TriggerEvent("esx:getSharedObject", function(object) ESX = object end)
-        Citizen.Wait(0)
-    end
 
     -- Added by Space
     -- Create Blips
