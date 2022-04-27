@@ -1,5 +1,5 @@
 # Banking System
-A banking system that allows players to add, withdraw or transfer money from their personal and joint accounts.
+A banking system that allows players to add, withdraw or transfer money from their personal and common accounts.
 
 This banking system was made entirely (mockup, front-end, lua) by <a href="https://github.com/s1nyx">Sinyx</a> for the Starling City project, since we don't use the script anymore i decided to put this script on github (with the developer's consent of course)
 
