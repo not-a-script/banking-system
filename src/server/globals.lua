@@ -1,5 +1,6 @@
 --[[
     Global Core Functions, to be use for compatibility with other scripts
+    TODO : Add every functions in fxmanifest and document them in exports.md
 ]]
 
 

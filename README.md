@@ -35,3 +35,5 @@ ensure mysql-async
 ensure banking-system
 ensure es_extended
 ```
+
+⚠️ Ne changez pas le nom de la ressource sinon l'interface visuelle (NUI) ne fonctionnera plus.

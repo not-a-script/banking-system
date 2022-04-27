@@ -1149,7 +1149,7 @@ document.onkeyup = function (data) {
       $("#layout-modal").css("display", "none");
       $("#navbar").css("display", "block");
     } else if (!(document.activeElement instanceof HTMLInputElement)) {
-      $.post("http://star_bank/closeMenu", JSON.stringify({}));
+      $.post("https://banking-system/closeMenu", JSON.stringify({}));
     }
   }
 };

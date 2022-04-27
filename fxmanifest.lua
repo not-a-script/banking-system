@@ -1,4 +1,4 @@
-fx_version 'adamant'
+fx_version 'cerulean'
 game 'gta5'
 description 'Banking system which allows players to add, remove or transfer money from personal and common accounts.'
 author 'Sinyx'
@@ -16,7 +16,7 @@ files {
 
 
 server_scripts {
-    "@mysql-async/lib/MySQL.lua",
+    "@mysql-async/lib/MySQL.lua", -- if you're using oxmysql, just replace mysql-async by oxmysql
     "src/config.lua",
     "src/server/utils.lua",
     "src/server/cache.lua",
