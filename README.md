@@ -24,7 +24,7 @@ Fonctionnalités :
  Pour chaque paiement, vous avez un historique, par exemple lorsque vous allez retirer de l'argent à un ATM vous allez voir dans votre historique que vous avez retirer de l'argent à un ATM (avec une petite icône), dans la config vous devez rajouter votre "service" (dans la table servicesType), puis lorsque vous allez utiliser un export pour retirer ou ajouté de l'argent à un joueur vous allez mettre l'id (dans quel ordre est votre service), si on prend l'Auto-école par exemple, qui est dans la <a href="src/config.lua">config</a> l'id du service serait 7 (en Lua une table commence toujours à partir de 1), puis lorsque vous allez utiliser l'export, le 3e argument après le montant. Sera votre id à mettre.
  
 
-<h1>Salaire ESX</h1>
+<h1>Salaire ESX [Métiers]</h1>
 
 Pour le système de salaire de ESX, le système de banque a **besoin** de es_extended cependant pour utiliser le système de banque sur les salaires, il faut qu'il soit start **avant** es_extended
 
