@@ -29,7 +29,7 @@ Features :
 
 For the ESX salary system, the bank system needs es_extended however to use the bank system on salaries, it must be started **before** es_extended
 
-<a href="https://gist.github.com/TheSpaceGamerV2/05eab8f2f73844273973779720b4a814">How to adapt salary to this bank system ?</a> 
+<a href="https://gist.github.com/TheSpaceGamerV2/05eab8f2f73844273973779720b4a814">How to adapt salary ?</a> 
 
 Here is an example of how start the cfg
 ```
