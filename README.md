@@ -1,16 +1,18 @@
 # Banking System
-A banking system that allows players to add, withdraw or transfer money from their personal and common accounts.
 
-🇫🇷 <a href="https://github.com/idev-co/banking-system/tree/esx-french">Here</a>
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-This banking system was made entirely (mockup, front-end, lua) by <a href="https://github.com/s1nyx">Sinyx</a> for the Starling City project, since we don't use the script anymore i decided to put this script on github (with the developer's consent of course)
+A banking system allowing players to put, withdraw or transfer money from their personal and common accounts.
 
-Compatible with :
+🇫🇷 French README: <a href="https://github.com/idev-co/banking-system/tree/esx-french">Click here</a>
+
+This banking system was entirely made (mockup, front-end, lua) by <a href="https://github.com/s1nyx">Sinyx</a> for the Starling City project, since we don't use the script anymore I decided to put it on github (with the developer's consent of course)
+
+## Compatible with
  - ESX Legacy
  - ESX V1 (including sub versions)
 
-
-Features :
+## Features
 - Common account system (maximum 3)
 - Money transfer
 - Cache system (to avoid too many sql requests)
@@ -21,11 +23,11 @@ Features :
  
  To adapt your scripts go see how to use <a href="exports.md">Exports</a> (server side)
 
-<h1>Purchase History</h1>
+## Purchase History
 
- For each payment, you have a history, for example when you withdraw money from an ATM you will see in your history that you have withdrawn money from an ATM (with a small icon), in the <a href="src/config.lua">configuration</a> you must add your "service" (in the table servicesType), then when you are going to use an export to withdraw or add money to a player you will put the id (in which order is your service), if we take the driving school for example, which is in the config, the id of the service would be 7 (in Lua a table always starts from 1), then when you are going to use the export, the 3rd argument after the amount will be your id to put.
+For each payment, you have a history, for example when you withdraw money from an ATM you will see in your history that you have withdrawn money from an ATM (with a small icon), in the <a href="src/config.lua">configuration</a> you must add your "service" (in the table servicesType), then when you are going to use an export to withdraw or add money to a player you will put the id (in which order is your service), if we take the driving school for example, which is in the config, the id of the service would be 7 (in Lua a table always starts from 1), then when you are going to use the export, the 3rd argument after the amount will be your id to put.
 
-<h1>ESX Salary [Jobs]</h1>
+## ESX Salary [Jobs]
 
 For the ESX salary system, the bank system needs es_extended however to use the bank system on salaries, it must be started **before** es_extended
 
@@ -45,6 +47,3 @@ You can have support on our <a href="https://discord.gg/8ecXhFXqR4">Discord</a> 
 ![Capture d’écran 2022-04-27 223321](https://user-images.githubusercontent.com/40030799/165626282-2604065e-e66d-4fbd-bdd3-f316ddd47549.png)
 ![Capture d’écran 2022-04-27 223344](https://user-images.githubusercontent.com/40030799/165626322-f46cef4f-05d6-4ca8-8583-96adbd92caf8.png)
 ![Capture d’écran 2022-04-27 223359](https://user-images.githubusercontent.com/40030799/165626342-fdf99314-50ae-4a44-a631-a3b2d880d9d1.png)
-
-
-
