@@ -9,6 +9,7 @@ Compatible with :
  - ESX Legacy
  - ESX V1 (including sub versions)
 
+<!> IMPORTANT: The resource needs to be named banked-system otherwise it won't work.
 
 Features :
 - Common account system (maximum 3)
